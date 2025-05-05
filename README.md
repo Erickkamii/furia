@@ -17,8 +17,8 @@ Ele utiliza a API da OpenAI para responder perguntas com base em uma base de con
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/furia-bot.git
-   cd furia-bot
+   git clone https://github.com/Erickkamii/furia.git
+   cd furia
    ```
 
 2. Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
