@@ -3,26 +3,7 @@
 Este projeto é um chatbot inteligente para a **FURIA Esports**, com backend em Python (FastAPI) e frontend em Next.js.  
 Ele utiliza a API da OpenAI para responder perguntas com base em uma base de conhecimento específica da organização.
 
----
 
-## 📁 Estrutura do Repositório
-
-```
-/furia-bot/
-│
-├── backend/          # Backend com FastAPI
-│   ├── main.py       # Código principal do servidor
-│   └── data/         
-│       └── furia_esports.json  # Base de conhecimento
-│
-├── frontend/         # Frontend com Next.js
-│   └── ...           
-│
-├── docker-compose.yml
-└── .env              # Arquivo de variáveis de ambiente (não versionado)
-```
-
----
 
 ## ⚙️ Pré-requisitos
 
