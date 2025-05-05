@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: furia-bot-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./.env:/app/.env
+    restart: unless-stopped
+    environment:
+      - OPENAI_MODEL=gpt-4o-mini
+      # A API key deve estar no arquivo .env e não aqui
+    mem_limit: 500m
+
+  frontend:
+    build: ./frontend
+    container_name: furia-bot-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    mem_limit: 300m
+
+volumes:
+  app-data:
+    driver: local
